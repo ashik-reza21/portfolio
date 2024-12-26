@@ -2,110 +2,87 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #0f1624;
-  color: #fff;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
 }
 
 .container {
+  width: 90%;
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-}
-
-.menu li {
-  margin-left: 20px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.menu a:hover {
-  color: #08f7fe;
-}
-
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-}
-
-.text h2 {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.text h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.text p {
-  font-size: 18px;
-  margin: 10px 0 20px;
-}
-
-.social-icons {
-  display: flex;
+section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.social-icons a {
+section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #f4f4f4;
+}
+
+p, ul {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.skills, .contact {
+  text-align: center;
+}
+
+.skills p {
+  font-size: 1.1rem;
   color: #fff;
-  font-size: 20px;
-  margin-right: 15px;
-  text-decoration: none;
 }
 
-.social-icons a:hover {
-  color: #08f7fe;
+.contact p {
+  font-size: 1rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: linear-gradient(45deg, #08f7fe, #6a00f4);
-  border-radius: 50px;
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 0.3s;
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.btn:hover {
-  background: linear-gradient(45deg, #6a00f4, #08f7fe);
-}
-
-.profile img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 10px solid #08f7fe;
-  box-shadow: 0 0 20px #08f7fe, 0 0 40px #6a00f4;
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
 }

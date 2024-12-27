@@ -10,49 +10,82 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      background: linear-gradient(to right, #1f4037, #99f2c8);
       color: #fff;
     }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
     nav {
-      background: #11171d;
-      padding: 10px 0;
-      color: #ffd700;
-      font-weight: bold;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      justify-content: center;
     }
 
     nav ul li {
-      display: inline-block;
-      margin: 0 15px;
+      margin: 0 20px;
     }
 
     nav ul li a {
       text-decoration: none;
-      color: inherit;
+      color: #ffd700;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
     }
 
-    main {
-      flex: 1;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      padding: 50px;
-      color: #333;
-      animation: fadeIn 1s ease-in;
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px 20px 20px;
+      background: #1a2930;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header p {
+      margin: 10px 0;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      right: 10%;
+      animation: slideInFromRight 1.5s ease-out;
+    }
+
+    @keyframes slideInFromRight {
+      from {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     @keyframes fadeIn {
@@ -65,13 +98,20 @@
     }
 
     section {
-      margin-bottom: 30px;
+      padding: 50px 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease-out;
     }
 
     section h2 {
       font-size: 2rem;
       border-bottom: 2px solid #ffd700;
       padding-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     section ul {
@@ -81,40 +121,19 @@
 
     section ul li {
       margin: 10px 0;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #11171d;
-      color: #ddd;
-    }
-
-    footer p {
-      margin: 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
     }
 
     footer a {
-      color: inherit;
-    }
-
-    .profile-picture {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin: 20px;
-      animation: slideIn 1s ease-out;
-    }
-
-    @keyframes slideIn {
-      from {
-        opacity: 0;
-        transform: translateX(100%);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
+      color: #ffd700;
+      text-decoration: none;
     }
 
     .phone {
@@ -128,16 +147,77 @@
 </head>
 <body>
 
-  <div class="container">
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <img src="https://drive.google.com/uc?export=view&id=1Pv2JWGP1mChexYTJDDOp65adWFJmavd4" alt="Profile Picture" class="profile-picture">
+  <!-- Header -->
+  <header>
+    <div>
+      <h1>Mohammad Ashik Reza</h1>
+      <p>Madinah Tower, Nazirpara, Sunnia Madrasha Road, Chattogram</p>
+      <p>Phone: <span class="phone">+880 1870017007</span> | Email: <a href="mailto:ashikreza21@gmail.com">ashikreza21@gmail.com</a></p>
+    </div>
+    <img src="https://drive.google.com/uc?export=view&id=1Pv2JWGP1mChexYTJDDOp65adWFJmavd4" alt="Profile Picture">
+  </header>
 
-    <main>
+  <!-- About Section -->
+  <section id="about">
+    <h2>Career Objective</h2>
+    <p>To excel in a dynamic environment by applying my skills in quick comprehension, analysis, and organization. I aim to leverage my interpersonal skills, drive for progress, and self-motivation to benefit my organization and foster professional growth.</p>
+  </section>
 
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Arts (BA Honours)</strong> – National University, English Literature (Appeared)</li>
+      <li><strong>M.A (KAMIL)</strong> – Islamic Arabic University, Hadith (CGPA: 3.85/5, 2021)</li>
+      <li><strong>Higher Secondary Certificate (Alim)</strong> – Jamea Ahmadia Sunnia Kamil Madrasah (CGPA: 4.71/5, 2016)</li>
+      <li><strong>B.A Degree (Fazil)</strong> – Islamic Arabic University, Islamic Studies (CGPA: 3.42/5, 2019)</li>
+      <li><strong>Secondary School Certificate (Dakhil)</strong> – Jamea Ahmadia Sunnia Kamil Madrasah (CGPA: 5/5, 2014)</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>Managing Director – Ala-Hazrat Enterprise, Chattogram (1 Year)</li>
+      <li>Unit Manager – Rupali Life Insurance Company, Chattogram (3 Years)</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Graphics Design: Adobe Photoshop, Adobe Illustrator</li>
+      <li>Video Editing: Adobe After Effects, Premiere Pro, Filmora</li>
+      <li>Accounts Management: Budgeting, Forecasting</li>
+      <li>Team Leadership, Public Speaking</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ashikreza21@gmail.com">ashikreza21@gmail.com</a></p>
+    <p>Phone: <span class="phone">+880 1870017007</span></p>
+    <p>Permanent Address: Moniruzzaman Shaheber Bari, Mirzapur, Hathazari, Chattogram</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Mohammad Ashik Reza. <a href="#top">Back to Top</a></p>
+  </footer>
+
+</body>
+</html>

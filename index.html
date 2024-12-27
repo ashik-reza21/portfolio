@@ -3,140 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammad Ashik Reza - Portfolio</title>
+  <title>Pokchot's Portfolio</title>
   <style>
-    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
     }
-
-    /* Container */
-    .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-      padding: 20px;
-    }
-
-    /* Header */
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px 0;
+    nav {
+      background: #11171d;
+      padding: 10px 0;
       text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #ffd700;
+      font-weight: bold;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: #1a2930;
     }
     header h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 10px;
     }
-    header h2 {
-      font-size: 1.5rem;
-      color: #aaa;
-    }
-
-    /* Sections */
     section {
+      padding: 50px 20px;
+      margin: 20px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
-      margin: 20px 0;
-      padding: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
-    section h3 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #fff;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 10px;
     }
     section ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
     section ul li {
-      margin: 5px 0;
+      margin: 10px 0;
     }
-
-    /* Contact Section */
-    .contact {
+    footer {
       text-align: center;
-      padding: 10px;
-      background: #444;
-      margin-top: 20px;
-      border-radius: 10px;
+      padding: 20px;
+      background: #11171d;
     }
-    .contact p {
-      margin: 5px 0;
+    footer p {
+      margin: 0;
     }
-
-    /* Button */
-    .btn {
-      display: inline-block;
-      background: #6a11cb;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #2575fc;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .container {
-        width: 95%;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      header h2 {
-        font-size: 1.2rem;
-      }
+    footer a {
+      color: #ffd700;
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Work Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>Welcome to My Portfolio</h1>
-    <h2>Mohammad Ashik Reza</h2>
+    <h1>Mohammad Ashik Reza</h1>
+    <p>Madinah Tower, Nazirpara, Sunnia Madrasha Road, Chattogram | Mobile: +880 1870017007 | Email: ashikreza21@gmail.com</p>
   </header>
-  <div class="container">
-    <section>
-      <h3>About Me</h3>
-      <p>To excel in a dynamic environment by applying my skills in quick comprehension, analysis, and organization.</p>
-    </section>
-    <section>
-      <h3>Academic Qualification</h3>
-      <ul>
-        <li>Bachelor of Arts (Honours) in English Literature - National University (Appeared)</li>
-        <li>Kamil in Arabic (Islamic Studies) - CGPA: 3.85 (2021)</li>
-        <li>Alim in Arts - CGPA: 4.71 (2016)</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Work Experience</h3>
-      <ul>
-        <li>Customer Service Manager, Ala-Hazrat Enterprise</li>
-        <li>Unit Manager, Rupali Life Insurance Company</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Skills</h3>
-      <p>Graphics Design, Video Editing, Accounts Management, Leadership</p>
-    </section>
-    <section class="contact">
-      <h3>Contact</h3>
-      <p>Email: ashikreza21@gmail.com</p>
-      <p>Phone: +880 1870017007</p>
-      <a href="mailto:ashikreza21@gmail.com" class="btn">Email Me</a>
-    </section>
-  </div>
+
+  <section id="about">
+    <h2>Career Objective</h2>
+    <p>To excel in a dynamic environment by applying my skills in quick comprehension, analysis, and organization. I aim to leverage my interpersonal skills, drive for progress, and self-motivation to benefit my organization and foster professional growth.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Arts (BA Honours)</strong> – National University, English Literature (Appeared), Duration: 4 Years</li>
+      <li><strong>M.A (KAMIL)</strong> – Islamic Arabic University, Hadith (CGPA: 3.85/5, 2021), Duration: 2 Years</li>
+      <li><strong>Higher Secondary Certificate (Alim)</strong> – Jamea Ahmadia Sunnia Kamil Madrasah (CGPA: 4.71/5, 2016)</li>
+      <li><strong>B.A Degree (Fazil)</strong> – Islamic Arabic University, Islamic Studies (CGPA: 3.42/5, 2019), Duration: 3 Years</li>
+      <li><strong>Secondary School Certificate (Dakhil)</strong> – Jamea Ahmadia Sunnia Kamil Madrasah (CGPA: 5/5, 2014)</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>Managing Director – Ala-Hazrat Enterprise, Chattogram (1 Year)</li>
+      <li>Unit Manager – Rupali Life Insurance Company, Chattogram (3 Years)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Expertise</h2>
+    <ul>
+      <li>Graphics Design: Adobe Photoshop, Adobe Illustrator</li>
+      <li>Video Editing: Adobe After Effects, Premiere Pro, Filmora</li>
+      <li>Accounts Management: Payables, Receivables, Budgeting, Cash Forecasting</li>
+      <li>Team Building, Leadership, Public Speaking</li>
+      <li>Quick Learner, Self-motivated, Decision Maker</li>
+      <li>MS Office (Word, Excel, PowerPoint), Google Sheets</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: ashikreza21@gmail.com</li>
+      <li>Mobile: +880 1870017007</li>
+      <li>Permanent Address: Moniruzzaman Shaheber Bari, Mirzapur, Hathazari, Chattogram</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mohammad Ashik Reza. <a href="#top">Back to Top</a></p>
+  </footer>
+
 </body>
 </html>
